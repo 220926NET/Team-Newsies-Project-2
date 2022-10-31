@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "WJcaiiVLFaeN7OhV5prHwXFWD7enKT3D4SUPIIwemgkZqZyim236176p3xZ3pHV9P5pgvVimWAPF9CpQqJGjQA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Emman\\Revature\\team-news-project-2\\Team-Newsies-Project-2\\news-sentiment-app\\news-sentiment-app.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Emman\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Emman\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Emman\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\Emman\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\Emman\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\Emman\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
