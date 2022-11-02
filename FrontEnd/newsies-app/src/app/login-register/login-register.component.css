@@ -1,0 +1,55 @@
+.login-form-outer-container{
+    margin: 0;
+    padding:0;
+}
+
+.login-form-container {
+    width: fit-content;
+    margin: 0 auto 0 auto;
+    padding-top: 15%;
+
+}
+
+.login-form-container-btn-group{
+    margin-top: 10pt;
+    text-align: center;
+
+}
+
+.btn-login{
+    background-color: pink;
+    width: 50%;
+}
+.login-form-container-error-text{
+    color: rgb(234, 70, 97);
+    text-align: center;
+}
+
+.btn-register-here{
+    margin-top: 10pt;
+    font-size: small;
+    background-color: rgb(203, 238, 108);
+    float: left;
+}
+.btn-register-login{
+    width: fit-content;
+    margin: auto;
+}
+/* order matters do not switch invalid and untouched css  */
+#username.ng-invalid {
+    border: 1px solid rgb(230, 56, 56); 
+}
+
+#password.ng-invalid {
+    border: 1px solid rgb(230, 56, 56); 
+}
+
+#username.ng-untouched {
+    border: 1px solid grey;
+}
+
+#password.ng-untouched  {
+    border: 1px solid grey;
+}
+/*                                             */
+
