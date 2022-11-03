@@ -1,5 +1,6 @@
 using NewsAPI.Models;
-public interface INewsService {
+public interface INewsService
+{
 
-    ResponseMessage<List<MockArticle>> GetMainNewsFeed();
+    Task<ResponseMessage<List<MockArticle>>> GetMainNewsFeed();
 }
