@@ -1,4 +1,7 @@
 using Serilog;
+using AutoMapper;
+using NewsAPI.Models;
+
 var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 var builder = WebApplication.CreateBuilder(args);
 
@@ -33,10 +36,13 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddSingleton<Repository>();
 builder.Services.AddScoped<ICommentService, CommentService>();
 // builder.Services.AddScoped<IProfileService, ProfileService>();
 builder.Services.AddScoped<ILoginService, LoginService>();
 builder.Services.AddScoped<INewsService, NewsService>();
+
+
 var app = builder.Build();
 
 

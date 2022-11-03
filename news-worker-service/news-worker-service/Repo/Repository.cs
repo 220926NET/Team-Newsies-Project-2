@@ -3,8 +3,7 @@ public class Repository
 {
 
     private SqlConnection _connection;
-    private string _connectionString = "Server=tcp:220926netp2dbs.database.windows.net,1433;Initial Catalog=newsDB;Persist Security Info=False;User ID=newscollector;Password=a11TheNew$;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30";
-
+    private string _connectionString = Secrets.GetOdbcStr();
     public Repository()
     {
         _connection = new SqlConnection(_connectionString);
@@ -12,7 +11,7 @@ public class Repository
 
     public void AddNews(List<MockArticle> articles)
     {
-        ResponseMessage<string> addNewsRes = new ResponseMessage<string>();
+
 
         try
         {
@@ -40,15 +39,13 @@ public class Repository
             _connection.Close();
             _connection.Open();
 
-            addNewsRes.Success = true;
-            addNewsRes.Message = "Successfully added news into database";
+
         }
         catch (SqlException e)
         {
 
             Console.WriteLine(e.Message);
-            addNewsRes.Message = "There was an issues adding news into database.";
-            addNewsRes.Success = false;
+
         }
         finally
         {
