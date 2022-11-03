@@ -15,9 +15,9 @@ public class NewsController: ControllerBase {
 
     // Action method that is used for retrieving a users profile
     // A action method is returned with the user profile
-    [HttpGet("/mainFeed")]
+    [HttpGet("/news")]
     public ActionResult<ResponseMessage<List<Article>>> GetMainNewsFeedRes(){
-        ResponseMessage<List<Article>> getMainNewsFeedRes = _newsService.GetMainNewsFeed();
+        ResponseMessage<List<MockArticle>> getMainNewsFeedRes = _newsService.GetMainNewsFeed();
 
         return Ok(getMainNewsFeedRes); 
     }
