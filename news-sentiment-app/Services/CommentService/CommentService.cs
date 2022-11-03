@@ -32,9 +32,9 @@ public class CommentService : ICommentService {
     public ResponseMessage<List<Comment>> GetArticleComments(int articleId) {
         // This represents a comment that is relevant to our news article returned from our database
         List<Comment> comments = new List<Comment>(){
-            new Comment("Thiss was an awesome read", 1),
-            new Comment("I hated this ", -.8), 
-            new Comment("Wow really insightful", .5)
+            new Comment("emmanuel", "Thiss was an awesome read", 1),
+            new Comment("george", "I hated this ", -.8), 
+            new Comment("daniel", "Wow really insightful", .5)
         }; 
         
         ResponseMessage<List<Comment>> getArticleCommentRes = new ResponseMessage<List<Comment>>();

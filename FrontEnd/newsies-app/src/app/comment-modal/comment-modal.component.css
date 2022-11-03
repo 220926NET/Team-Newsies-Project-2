@@ -1,0 +1,17 @@
+
+
+
+.modal-container-details {
+    margin: 10px; 
+    background-color: rgb(209, 209, 225);
+    box-shadow: -10px 5px 0px 1px rgb(70, 69, 69);
+    margin: 0 20% 0 20%;
+}
+.modal-container-user-name{
+    margin: 10px 0 0 10px;
+   
+}
+
+.modal-container-user-comment{
+    margin: 10px 0 0 10px;
+}

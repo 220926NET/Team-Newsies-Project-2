@@ -1,0 +1,35 @@
+<!-- foreach mock article create a cointainer of the article -->
+<div class="news-container">
+    <div class="news-img-container">
+        <img src="{{article.urlToImage}}" alt="">
+    </div>
+
+    <div class="news-details-container">
+        <div class="new-details-article-information">
+
+            <div class="news-details-title-container">
+                <h2>{{article.title}}</h2>
+            </div>
+            <div class="news-details-description-container">
+                <p>{{article.description}}</p>
+            </div>
+            <div class="news-details-link-container">
+                <a
+                    href="https://www.cnbc.com/2022/10/31/elon-musk-has-pulled-more-than-50-tesla-engineers-into-twitter.html">{{article.url}}</a>
+            </div>
+
+        </div>
+        <div class="new-img-container-comments">
+            <div class="btn btn-click-to-comment" (click)="getComments(article.id)">Comment</div>
+        </div>
+    </div>
+</div>
+
+<hr />
+
+<div class="modal-container" [hidden]="!viewComments">
+    <app-comment-modal *ngFor="let comment of articleComments" [comment]="comment" [hidden]="!viewComments"
+        (exitModal)="closeModal()">
+    </app-comment-modal>
+    <button (click)="closeModal()">Close Modal</button>
+</div>

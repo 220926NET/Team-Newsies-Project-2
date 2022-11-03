@@ -1,0 +1,41 @@
+.news-container {
+    
+    margin: 10% 25% 10% 25%; 
+    display: flex;
+    width: 80%;
+}
+
+
+.news-img-container img {
+    width: 500px;
+}
+
+.news-img-container{
+
+    width: 500px;
+}
+
+
+.new-details-article-information{
+    padding: 10px;
+    background-color: rgb(155, 220, 155);
+    border: 1px solid green; 
+    margin: 10px; 
+}
+
+.btn-click-to-comment{
+    border: 2px solid grey; 
+    margin:10px;
+}
+
+.modal-container {
+    margin: 10px;
+    width: 50%;
+    height: 100vh;
+    background: rgb(246, 245, 245);
+    position: absolute;
+    float: left;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }

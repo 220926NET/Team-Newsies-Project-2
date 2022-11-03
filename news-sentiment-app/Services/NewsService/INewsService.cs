@@ -1,5 +1,5 @@
 using NewsAPI.Models;
 public interface INewsService {
 
-    ResponseMessage<List<Article>> GetMainNewsFeed();
+    ResponseMessage<List<MockArticle>> GetMainNewsFeed();
 }
